@@ -1,0 +1,38 @@
+Біологічний факультет
+https://lnu.edu.uabioweb.lnu.edu.ua
+Географічний факультет
+https://lnu.edu.uageography.lnu.edu.ua
+Геологічний факультет
+https://lnu.edu.uageology.lnu.edu.ua
+Економічний факультет
+https://lnu.edu.uaeconom.lnu.edu.ua
+Факультет електроніки та комп’ютерних технологій
+https://lnu.edu.uaelectronics.lnu.edu.ua
+Факультет журналістики
+https://lnu.edu.uajourn.lnu.edu.ua
+Факультет іноземних мов
+https://lnu.edu.ualingua.lnu.edu.ua
+Історичний факультет
+https://lnu.edu.uaclio.lnu.edu.ua
+Факультет культури і мистецтв
+https://lnu.edu.uakultart.lnu.edu.ua
+Механіко-математичний факультет
+https://lnu.edu.uanew.mmf.lnu.edu.ua
+Факультет міжнародних відносин
+https://lnu.edu.uaintrel.lnu.edu.ua
+Факультет педагогічної освіти
+https://lnu.edu.uapedagogy.lnu.edu.ua
+Факультет прикладної математики та інформатики
+https://lnu.edu.uaami.lnu.edu.ua
+Факультет управління фінансами та бізнесу
+https://lnu.edu.uafinancial.lnu.edu.ua
+Фізичний факультет
+https://lnu.edu.uaphysics.lnu.edu.ua
+Філологічний факультет
+https://lnu.edu.uaphilology.lnu.edu.ua
+Філософський факультет
+https://lnu.edu.uafilos.lnu.edu.ua
+Хімічний факультет
+https://lnu.edu.uachem.lnu.edu.ua
+Юридичний факультет
+https://lnu.edu.ualaw.lnu.edu.ua
