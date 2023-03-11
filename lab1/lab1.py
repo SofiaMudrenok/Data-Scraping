@@ -15,7 +15,7 @@ with open("data.txt", "w", encoding='utf-8') as f:
     for fac in page.find("ul",class_="structural-units").find_all("li"):
         txt = fac.find("h2").text
         href = fac.find("div",class_="details").find_all("p")[-1].find("span",class_="value").find("a").text
-        url = BASE_URL + href
+        url = "https://" + href
         print(txt)
         print(url)
         f.writelines(txt + "\n")
