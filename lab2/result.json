@@ -1,0 +1,21 @@
+[
+{"name": "Біологічний факультет", "link": "https://bioweb.lnu.edu.ua"},
+{"name": "Географічний факультет", "link": "https://geography.lnu.edu.ua"},
+{"name": "Геологічний факультет", "link": "https://geology.lnu.edu.ua"},
+{"name": "Економічний факультет", "link": "https://econom.lnu.edu.ua"},
+{"name": "Факультет електроніки та комп’ютерних технологій", "link": "https://electronics.lnu.edu.ua"},
+{"name": "Факультет журналістики", "link": "https://journ.lnu.edu.ua"},
+{"name": "Факультет іноземних мов", "link": "https://lingua.lnu.edu.ua"},
+{"name": "Історичний факультет", "link": "https://clio.lnu.edu.ua"},
+{"name": "Факультет культури і мистецтв", "link": "https://kultart.lnu.edu.ua"},
+{"name": "Механіко-математичний факультет", "link": "https://new.mmf.lnu.edu.ua"},
+{"name": "Факультет міжнародних відносин", "link": "https://intrel.lnu.edu.ua"},
+{"name": "Факультет педагогічної освіти", "link": "https://pedagogy.lnu.edu.ua"},
+{"name": "Факультет прикладної математики та інформатики", "link": "https://ami.lnu.edu.ua"},
+{"name": "Факультет управління фінансами та бізнесу", "link": "https://financial.lnu.edu.ua"},
+{"name": "Фізичний факультет", "link": "https://physics.lnu.edu.ua"},
+{"name": "Філологічний факультет", "link": "https://philology.lnu.edu.ua"},
+{"name": "Філософський факультет", "link": "https://filos.lnu.edu.ua"},
+{"name": "Хімічний факультет", "link": "https://chem.lnu.edu.ua"},
+{"name": "Юридичний факультет", "link": "https://law.lnu.edu.ua"}
+]
