@@ -1,5 +1,4 @@
 import scrapy
-from bs4 import BeautifulSoup
 from lab2.items import Lab2Item
 
 class LnuSpider(scrapy.Spider):
