@@ -6,14 +6,13 @@ from selenium import webdriver
 from selenium.webdriver.common.by import By
 from modul.items import ModulItem
 
-
 class TelevizorySpider(scrapy.Spider):
-    name = "televizory"
-    allowed_domains = ["hotline.ua"]
-    start_urls = ["https://ek.ua/ua/list/160/"]
+    name = 'televizory'
+    allowed_domains = ['ek.ua']
+    BASE_URL = 'https://ek.ua/ua'
+    start_urls = ['https://ek.ua/ua/list/160/']
 
-    
-def start_requests(self):
+    def start_requests(self):
         for url in self.start_urls:
             yield SeleniumRequest(
                 url=url,
@@ -24,7 +23,9 @@ def start_requests(self):
                      ".model-shop-name .sn-div")
                 ),
             )
-def parse(self, response):
+
+
+    def parse(self, response):
         soup = BeautifulSoup(response.text, 'html.parser')
         last_page = int(soup.find(class_="list-pager").find(class_="ib page-num").find_all('a')[-1].getText())
         for i in range(0, 10):
@@ -37,7 +38,7 @@ def parse(self, response):
                      ".model-shop-name .sn-div")
                 ),
             )
-def parse_phones(self, response):
+    def parse_phones(self, response):
         soup = BeautifulSoup(response.text, 'html.parser')
         phone_list = soup.find(id="list_form1").find_all('div')
         for phone in phone_list:
