@@ -16,7 +16,7 @@ class TelevizorySpider(scrapy.Spider):
         for url in self.start_urls:
             yield SeleniumRequest(
                 url=url,
-                callback=self.parse,
+                callback=self.parse_tv,
                 wait_time=10,
                 wait_until=expected_conditions.element_to_be_clickable(
                     (By.CSS_SELECTOR,
@@ -25,34 +25,22 @@ class TelevizorySpider(scrapy.Spider):
             )
 
 
-    def parse(self, response):
+    def parse_tv(self, response):
         soup = BeautifulSoup(response.text, 'html.parser')
-        last_page = int(soup.find(class_="list-pager").find(class_="ib page-num").find_all('a')[-1].getText())
-        for i in range(0, 10):
-            yield SeleniumRequest(
-                url=f"{self.start_urls[0]}/{i}/",
-                callback=self.parse_phones,
-                wait_time=10,
-                wait_until=expected_conditions.element_to_be_clickable(
-                    (By.CSS_SELECTOR,
-                     ".model-shop-name .sn-div")
-                ),
-            )
-    def parse_phones(self, response):
-        soup = BeautifulSoup(response.text, 'html.parser')
-        phone_list = soup.find(id="list_form1").find_all('div')
-        for phone in phone_list:
+        tv_list = soup.find(id="list_form1").find_all('div')
+        for tv in tv_list:
             try:
-                img_url = phone.find(class_="list-img").find('img').get('src')
-                model_wrapper = phone.find(class_="model-short-info").find(class_="model-short-title no-u")
+                img_url = tv.find(class_="list-img").find('img').get('src')
+                model_wrapper = tv.find(class_="model-short-info").find(class_="model-short-title no-u")
                 model = model_wrapper.find('span').getText()
                 model_url = model_wrapper.get('href')
-                price = phone.find(class_="model-hot-prices-td").find(class_="model-price-range").find('a').find_all(
-                    'span')
+                price = tv.find(class_="model-hot-prices-td").find(class_="model-price-range").find('a').find_all(
+                    'span'
+                )
                 start_price = int(price[0].getText().replace('\xa0', ''))
                 end_price = int(price[1].getText().replace('\xa0', ''))
                 shops = []
-                shops_html = phone.find(class_="model-hot-prices").find_all('tr')
+                shops_html = tv.find(class_="model-hot-prices").find_all('tr')
                 for shop in shops_html:
                     shops.append(shop.find('u').getText())
             except AttributeError:
